@@ -1,30 +1,35 @@
 body{
 	background-image: url("../images/swirl_pattern.png");
-}
-.title{
-	background-color: blue;
-	color: white;
+	text-align: center;
 }
 
-img{
-	width: 100%;
-	height: 100px;
+.title{
+	background-color: white;
+	font-family: 'Emilys Candy', cursive;
+	font-weight: bold;
+	font-size: 60px;
+	margin-top: 20px;
 }
+
 .instruction{
-	background-color: green;
-	color: white;
-	padding: 10px;
-	line-height: 32px;
-}
-.target{
-	background-color: red;
-	color: white;
+	background-color: white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: 'Spectral SC', serif;
+	font-size: 24px;
 	padding: 10px;
 }
-.winlose{
-	background-color: gray;
-	padding: 10px;
+
+.scores{
+	background-color: white;
+	margin-bottom: 40px;
+	font-family: 'Spectral SC', serif;
 }
-#totalScore{
-	line-height: 28px;
+
+.crystal{
+	margin-top: 40px;
+}
+img{
+	height: 200px;
+	width: 200px;
 }

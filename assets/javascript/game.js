@@ -10,12 +10,16 @@
 	blueVal = Math.floor(Math.random() * 11) + 3; //blue: 0 - 7
 	yellowVal = Math.floor(Math.random() * 8); //yellow: 3 - 13
 
+  //see what the value of each crystal has been choosen
 	console.log(greenVal);
 	console.log(redVal);
 	console.log(blueVal);
 	console.log(yellowVal);
+
+  //show the target score to the html 
 	$("#guess").text(targetScore);
 
+  //the function that resets the game
 	function reset(){
 		targetScore = (Math.floor(Math.random() * 50) +50);
 		yourScore = 0;
@@ -26,6 +30,7 @@
 
 	};
 
+  //on click function that adds the value of the choosen crystal to your score
 	$(".crystal-image").on("click", function() {
 		var crystalValue = ($(this).attr("data-crystalvalue"));
 		crystalValue = parseInt(crystalValue);
@@ -53,19 +58,21 @@
     	// print targetScore to the html dom
     	$("#totalScore").text(yourScore);	
 
+    //checks your score to see if the player wins then resets  
 		if (yourScore === targetScore) {
       		winning++;
       		reset();
       		$(".victory").text(winning);
       		$("#guess").text(targetScore);
-      		$("#totalScore").text(yourScore);
-      		
-    	}
-    	else if (yourScore >= targetScore) {
-     		losing++;
-      		reset();
-      		$(".defeat").text(losing);
-      		$("#guess").text(targetScore);
-      		$("#totalScore").text(yourScore);
+      		$("#totalScore").text(yourScore); 		
+  	}
+
+    //if the score is higher than the target score and reset the game
+  	else if (yourScore >= targetScore) {
+   		losing++;
+    		reset();
+    		$(".defeat").text(losing);
+    		$("#guess").text(targetScore);
+    		$("#totalScore").text(yourScore);
     	}
     });
