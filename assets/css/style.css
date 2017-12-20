@@ -1,6 +1,7 @@
 body{
 	background-image: url("../images/swirl_pattern.png");
 	text-align: center;
+
 }
 
 .title{
@@ -9,6 +10,7 @@ body{
 	font-weight: bold;
 	font-size: 60px;
 	margin-top: 20px;
+	border-radius: 5px;
 }
 
 .instruction{
@@ -18,16 +20,19 @@ body{
 	font-family: 'Spectral SC', serif;
 	font-size: 24px;
 	padding: 10px;
+	border-radius: 5px;
 }
 
 .scores{
 	background-color: white;
 	margin-bottom: 40px;
 	font-family: 'Spectral SC', serif;
+	border-radius: 5px;
 }
 
 .crystal{
 	margin-top: 40px;
+	border-radius: 5px;
 }
 img{
 	height: 200px;
